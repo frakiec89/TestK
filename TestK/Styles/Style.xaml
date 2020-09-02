@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="Color1" >
+        <SolidColorBrush.Color>
+            <Color A="225" R="255"   G="228" B="255"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+    <SolidColorBrush x:Key="Color2" >
+        <SolidColorBrush.Color>
+            <Color A="225" R="255"   G="74" B="109"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+
+    <Style TargetType="ListBox">
+        <Setter Property="FontSize" Value="30"/>
+        
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource Color1}" />
+        
+        
+    </Style>
+    
+    <Style TargetType="Border">
+        <Setter Property="BorderBrush" Value="{StaticResource Color2}"/>
+    </Style>
+    <Style TargetType="Window" x:Key="op">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="FontFamily" Value="Arial"/>
+    </Style>
+</ResourceDictionary>

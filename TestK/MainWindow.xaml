@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestK"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Style="{StaticResource op}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
@@ -18,6 +18,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+
+        <Button Grid.Column="0" >
+             
+        </Button>
+        
         <ListBox Name="lb1" Grid.Column="1" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -34,7 +39,7 @@
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
 
-                        <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" BorderBrush="Aqua" BorderThickness="2">
+                        <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" BorderThickness="2">
                             <Image Source="Image\Декорирование нарощенных ресниц стразами.jpg"/>
                         </Border>
 
